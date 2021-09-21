@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.header {
+    background-color: aliceblue;
+    border-bottom: #ccc 3px solid;
+    padding: 20px;
+}
+
+.container {
+    width: 700px;
+    margin: 30px auto;
+}

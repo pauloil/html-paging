@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>paginathing.js</title>
+    </style>
+</head>
+<body>
+<style>
+    li {
+        text-decoration: none;
+        list-style: none;
+        float: left;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Meroket</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jungkir Balik</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Uang ada</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bukan urusan</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mangkrak</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="lib/new.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('.table tbody').paginathing({
+            prevText: '前へ',
+            nextText: '次へ',
+            perPage: 2,
+            insertAfter: '.table',
+            pageNumbers: false
+        });
+    });
+</script>
+</body>
+</html>
